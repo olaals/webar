@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hiro and interaction project</title>
+    <meta name="description" content="Hiro and interaction project">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+  </head>
+  <body>
+     <a-scene embedded arjs>
+      <a-assets>
+         <a-mixin id="text"
+           text="align: center; width: 6; value: Yeah dude!"
+         ></a-mixin>
+       </a-assets>
+
+
+      <a-marker preset='hiro'>
+         <!-- <a-sphere position='0 0.5 0' material='color: green;' radius="0.1"></a-box> -->
+         <a-text mixin="text" position='0 0.5 0' wrap-count="20" rotation="-90 0 0"></a-text>
+      </a-marker>
+
+      <a-camera>
+
+          <a-cursor color="#FF0000"></a-cursor>
+      </a-camera>
+    </a-scene>
+  </body>
+</html>
+
