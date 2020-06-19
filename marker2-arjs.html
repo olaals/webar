@@ -6,9 +6,18 @@
     <body style="margin : 0px; overflow: hidden;">
         <a-scene embedded arjs>
         <a-marker preset="hiro">
-           <a-box position="0 0 0" rotation="0 0 0" color="#4CC3D9" shadow></a-box>
+           <a-box position="0 0 0" rotation="0 0 0" scale="1 1 1">
+        <a-animation attribute="position" direction="alternate" dur="2000" repeat="indefinite"
+          to="0 2.2 -5"></a-animation>
+        <a-animation attribute="rotation" begin="click" dur="2000" to="360 405 45"></a-animation>
+        <a-animation attribute="scale" begin="mouseenter" dur="300" to="2.3 2.3 2.3"></a-animation>
+        <a-animation attribute="scale" begin="mouseleave" dur="300" to="2 2 2"></a-animation>
+      </a-box>
+
         </a-marker>
-        <a-entity camera></a-entity>
+        <a-entity camera>
+            <a-cursor color="#FF0000"></a-cursor>
+        </a-entity>
         </a-scene>
     </body>
 </html>

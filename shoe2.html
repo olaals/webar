@@ -7,14 +7,15 @@
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
   </head>
   <body>
-     <a-scene background="color: #4a3b3d">
-  <a-entity
-            obj-model="obj: url(/home/ola/projects/webar/shoe.obj)"
-            scale="0.5 0.5 0.5"
-            position="0d 1.5 -2"
-            rotation="0 90 0"
-   ></a-entity>
-</a-scene>
+     <a-scene>
+         <a-assets>
+            <a-asset-items id="shoe" src="assets/ball.gltf"></a-asset-items>
+         </a-assets>
+
+
+         <a-entity gltf-model="#shoe"></a-entity>
+
+     </a-scene>
   </body>
 </html>
 

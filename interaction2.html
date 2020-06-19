@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basic Scene - A-Frame</title>
+    <meta name="description" content="Basic Scene - A-Frame">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      
+      <a-box color="AA00FF" position="0 2 -5" rotation="0 45 45" scale="2 2 2">
+        <a-animation attribute="position" direction="alternate" dur="2000" repeat="indefinite"
+          to="0 2.2 -5"></a-animation>
+        <a-animation attribute="rotation" begin="click" dur="2000" to="360 405 45"></a-animation>
+        <a-animation attribute="scale" begin="mouseenter" dur="300" to="2.3 2.3 2.3"></a-animation>
+        <a-animation attribute="scale" begin="mouseleave" dur="300" to="2 2 2"></a-animation>
+      </a-box>
+      
+      <a-light type="ambient" color="#445451"></a-light>
+      <a-light type="point" intensity="2" position="2 4 4"></a-light>
+      <a-plane rotation="-90 0 0" height="100" width="100"></a-plane>
+      
+      <a-camera>
+        <a-cursor color="#FF0000"></a-cursor>
+      </a-camera>
+    </a-scene>
+  </body>
+</html>
