@@ -1,6 +1,3 @@
-console.log("added succ sfsdfds")
-
-
 box_span = document.getElementById('box')
 
 var toggle = 0;

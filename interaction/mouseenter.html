@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mouse enter interaction</title>
+    <meta name="description" content="Mouse enter interaction">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    
+</head>
+  <body>
+    <a-scene background="color: #add8e6">
+      
+      <a-sphere id="redsphere" position="0 2 -5" radius="1" color="red"></a-sphere>
+      <a-sphere id="greensphere" position="3 2 -5" radius="1" color="green"></a-sphere>
+      <a-sphere id="bluesphere" position="-3 2 -5" radius="1" color="blue"></a-sphere>
+
+      <a-camera>
+        <a-cursor color="#FAFAFA"></a-cursor>
+      </a-camera>
+    </a-scene>
+
+    <script src="mouseenter.js"></script>
+  </body>
+</html>
