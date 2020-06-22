@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="apple-mobile-web-app-capable" content="yes">
+<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>        
+
+        <style>
+            body
+            {
+                background-color: black;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <a-scene>
+            <a-scene>
+                <a-assets>
+                  <a-asset-item id="tree" src="ball.gltf"></a-asset-item>
+                </a-assets>
+              
+                <a-entity gltf-model="#tree" position="0 0 -10"></a-entity>
+
+
+              </a-scene>
+        </a-scene>
+    </body>
+</html>

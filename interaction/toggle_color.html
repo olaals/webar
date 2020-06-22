@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Toggle color example</title>
+    <meta name="description" content="Toggle color">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+      </a-assets>
+      
+      <a-box id = "box" position="0 2 -5" rotation="0 45 45" scale="2 2 2" color="#FF0000"></a-box>
+      
+      <a-sky height="2048" radius="30" color="#0000FF"  theta-length="90" width="2048"></a-sky>
+      <a-light type="ambient" color="#445451"></a-light>
+      <a-light type="point" intensity="2" position="2 4 4"></a-light>
+      <a-plane color="#008000" rotation="-90 0 0" height="100" width="100"></a-plane>
+      
+      <a-camera>
+        <a-cursor color="#FAFAFA"></a-cursor>
+      </a-camera>
+    </a-scene>
+
+    <script src="toggle_color.js"></script>
+  </body>
+</html>
