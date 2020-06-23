@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Image Target to SLAM | 8th Wall</title>
+
+    
+<meta property="og:title" content="Image Target to SLAM">
+<meta property="og:url" content="https://www.8thwall.com/8thwall/image-target-to-slam-aframe">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://cdn.8thwall.com/apps/cover/2ru9fow7ixf56dypezj89ih3qp1ox7kn1k467n4whb1qk3xgvc4ab1o6-preview">
+<meta property="og:description" content="This project shows how to utilize image target tracking with SLAM in the same scene. Tap on the palm tree to drop coconuts on the nearest surface.">
+<meta property="og:site_name" content="8th Wall">
+
+
+<meta name="twitter:card" content="summary_large_image">
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/public/apple-touch-icon-221860.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/public/favicon-32x32-8e6f6a.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/public/favicon-16x16-03990e.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/static/public/safari-pinned-tab-b65db6.svg" color="#7611b7">
+    <meta name="msapplication-TileColor" content="#7611b7">
+    <meta name="theme-color" content="#7611b7">
+
+    <!-- Google Tag Manager -->
+    <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WHW972G');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Stripe -->
+    <script src="https://js.stripe.com/v3/"></script>
+
+</head>
+<body>
+  <div id="root"></div>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WHW972G"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <script src="/static/public/amazon-cognito-identity-4.2.4.min.js"></script>
+<script type="text/javascript" src="/static/deployment/3429e0cb/bundle.js"></script></body>
+</html>
+
