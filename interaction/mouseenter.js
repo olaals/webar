@@ -3,7 +3,9 @@ redsphere_el = document.getElementById('redsphere');
 greensphere_el = document.getElementById('greensphere');
 bluesphere_el = document.getElementById('bluesphere');
 
-var increaseSize = 1.2
+
+
+increaseSize = 1.03;
 
 redsphere_el.addEventListener('mouseenter', function(evnt){
     redsphere_el.setAttribute('material', 'color', 'yellow');
@@ -16,11 +18,12 @@ redsphere_el.addEventListener('mouseleave', function(evnt){
     redsphere_el.setAttribute('material', 'color', 'red');
     var redsphereRadius = redsphere_el.getAttribute('radius')
     redsphere_el.setAttribute('radius', redsphereRadius/increaseSize);
-    
 })
 
 greensphere_el.addEventListener('mouseenter', function(evnt){
     greensphere_el.setAttribute('material', 'color', 'yellow');
+    var greensphereRadius = greensphere_el.getAttribute('radius')
+    greensphere_el.setAttribute('radius', greensphereRadius*increaseSize)
 })
 
 greensphere_el.addEventListener('mouseleave', function(evnt){
@@ -34,7 +37,6 @@ bluesphere_el.addEventListener('mouseenter', function(evnt){
 bluesphere_el.addEventListener('mouseleave', function(evnt){
     bluesphere_el.setAttribute('material', 'color', 'blue');
 })
-
 
 
 
