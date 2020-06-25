@@ -45,7 +45,8 @@ function render() {
     const longitude = position.coords.longitude;
 
     const model = document.createElement('a-entity');
-    model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
+    //model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
+    model.setAttribute('gps-entity-place', `latitude: 63.311907; longitude: 9.808381;`);
 
     setModel(models[modelIndex], model);
 
